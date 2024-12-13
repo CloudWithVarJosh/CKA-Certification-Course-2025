@@ -60,7 +60,7 @@ Example of the Problem:
  3. Docker Registries: Where images are stored (e.g., Docker Hub).
  4. Docker Engine:
 	- Docker CLI: Tool used to interact with Docker
-	- REST API: Translates CLI commands (like docker run or docker pull) into HTTP requests that the Docker Daemon understands.
+	- REST API: Translates CLI commands (like docker run or docker pull) into HTTP requests that the Docker Daemon understands. It allows external tools, scripts, or applications to interact programmatically with Docker, making automation and integration possible.
 	- Docker Daemon: Brains of Docker. It listens for requests from the CLI or REST API.
 
 **Using the car analogy here:**
