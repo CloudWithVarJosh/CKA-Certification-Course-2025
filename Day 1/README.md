@@ -53,7 +53,6 @@ Example of the Problem:
 
 ## Low-Level Workflow with Docker
 
-
 **Key Concepts:**
 
  1. Docker Images: The blueprint for containers. Code+Dependencies.
@@ -61,8 +60,14 @@ Example of the Problem:
  3. Docker Registries: Where images are stored (e.g., Docker Hub).
  4. Docker Engine:
 	- Docker CLI: Tool used to interact with Docker
-	- REST API: interface that allows external applications to communicate with Docker.
+	- REST API: Translates CLI commands (like docker run or docker pull) into HTTP requests that the Docker Daemon understands.
 	- Docker Daemon: Brains of Docker. It listens for requests from the CLI or REST API.
+
+**Using the car analogy here:**
+
+- Docker CLI: Visualize it as the car dashboard where user commands are entered.
+- Docker REST API: Visualize it as wires transmitting commands from the dashboard to the engine.
+- Docker Daemon: Visualize it as the engine performing tasks like pulling images and running containers.
 
 ![Alt text](/images/1e.png)
 
