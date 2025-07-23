@@ -167,6 +167,12 @@ kubectl run test-pod --image=busybox -it --rm --restart=Never -- /bin/sh
 ```sh
 curl backend-svc:9090 # ❌ Will not work
 ```
+If Busybox image giving curl not found error, in that case i used curl image itself using which I validated the service. Command as follows:
+
+```sh
+kubectl run curl-pod --image=curlimages/curl   -it --rm --restart=Never   -- sh -c "curl http://backend-service.app1-ns:9090"
+```
+
 **For cross-namespace access, use the following format:**  
 ```sh
 curl http://backend-svc.app1-ns:9090
