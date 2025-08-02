@@ -40,5 +40,5 @@ cd CKA-Certification-Course-2025/Day1
 ##  Stay Connected!  
 
 - Follow me on **[LinkedIn: Varun Joshi](https://www.linkedin.com/in/varun-joshi-2b516752/)**  
-- Subscribe to my **[YouTube Channel: Cloud With VarJosh](https://www.youtube.com/@CloudWithVarJosh04)**  
+- Subscribe to my **[YouTube Channel: Cloud With VarJosh](https://www.youtube.com/@CloudWithVarJosh)**  
 - Explore the Repository on **[GitHub](https://github.com/CloudWithVarJosh/CKA-Certification-Course-2025)**  
