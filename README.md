@@ -6,7 +6,8 @@ Welcome to the official GitHub repository for the CKA Certification Course 2025!
 
 This repository is your one-stop shop for all the code examples, Dockerfiles, and resources you'll need throughout the course. Whether you're a beginner or looking to brush up your skills, you're in the right place to master Docker and Kubernetes.
 
-### YouTube Playlist for this Course  
+### Details: 
+[Course Introduction: Day 0](https://www.youtube.com/watch?v=vzOcHoNcwMg&t=82s)
 [CKA Certification Course 2025 Playlist](https://www.youtube.com/playlist?list=PLmPit9IIdzwRjqD-l_sZBDdPlcSfKqpAt)
 
 ## What You'll Find in This Repository
