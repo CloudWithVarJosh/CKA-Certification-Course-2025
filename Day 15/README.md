@@ -41,7 +41,7 @@ If this **repository** helps you, give it a ⭐ to show your support and help ot
 Before we dive into **manual scheduling** and **static pods**, it's essential to recall how the **Kubernetes scheduler** works.  
 
 📌 **If you haven’t already, please visit the following resources to refresh your understanding:**  
-- **GitHub Repo:** [Kubernetes Deployment Workflow](https://github.com/CloudWithVarJosh/CKA-Certification-Course-2025/tree/main/Day%207#kubernetes-deployment-workflow)  
+- **GitHub Repo:** [Kubernetes Deployment Workflow](https://github.com/CloudWithVarJosh/CKA-Certification-Course-2025/tree/main/Day%2007#kubernetes-deployment-workflow)  
 - **Video Explanation:** [Kubernetes Scheduler & Deployment Workflow](https://www.youtube.com/watch?v=-9Cslu8PTjU&list=PLmPit9IIdzwRjqD-l_sZBDdPlcSfKqpAt&index=7&t=897s&ab_channel=CloudWithVarJosh)  
 
 ---
