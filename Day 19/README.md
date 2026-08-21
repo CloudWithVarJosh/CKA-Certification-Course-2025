@@ -196,7 +196,7 @@ We briefly discussed the Metrics Server in **Day 7** when covering **Kubernetes 
 
 📌 **Watch Day 7 for More Context:**  
 - **YouTube**: [Day 7 YouTube Video](https://www.youtube.com/watch?v=-9Cslu8PTjU&t=972s&ab_channel=CloudWithVarJosh)  
-- **GitHub**: [Day 7 GitHub Notes](https://github.com/CloudWithVarJosh/CKA-Certification-Course-2025/tree/main/Day%207)  
+- **GitHub**: [Day 7 GitHub Notes](https://github.com/CloudWithVarJosh/CKA-Certification-Course-2025/tree/main/Day%2007)  
 
 ---
 
