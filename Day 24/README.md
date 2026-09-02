@@ -38,7 +38,7 @@ Welcome to Day 24, where we dive deep into **Docker volumes**! To set the stage,
 
 ### **Understanding Storage in Docker**
 
-![Alt text](/images/24a.png)
+![Alt text](./images/24a.png)
 
 Imagine we have a host system—this could be a VM or your laptop—that has the **Docker Engine** installed. We’re hosting three containers on this host: **Container 1**, **Container 2**, and **Container 3**. All these containers are based on an image created using the following `Dockerfile`:
 
@@ -122,7 +122,7 @@ When you create a container from an image:
 
 ### **Storage Calculation Example**
 
-![Alt text](/images/24b.png)
+![Alt text](./images/24b.png)
 
 Let’s assume:
 - The base image size is **50MB**.
@@ -140,7 +140,7 @@ Let’s assume:
 
 ### **Handling Data Loss in Writable Layers**
 
-![Alt text](/images/24c.png)
+![Alt text](./images/24c.png)
 
 Since the image layers are **read-only**, any changes made to the container are stored in the **writable layer**. If a container is stopped or fails:
 - For instance, if **Container 2** stops, the **10MB of delta data in its writable layer will be lost**.  
@@ -155,7 +155,7 @@ To avoid such data loss, Docker provides **volumes**—a powerful mechanism for 
 
 ## **Storage in Docker: How Does It Work?**
 
-![Alt text](/images/24d.png)
+![Alt text](./images/24d.png)
 
 When you create a **Docker container**, it needs a way to store data. Docker achieves this with two key components:
 - **Storage Drivers** 
@@ -274,7 +274,7 @@ We’ll break all this down more clearly in the **next lecture**, where we’ll 
 
 ## **How Docker Storage Works on macOS, Windows, and Linux**
 
-![Alt text](/images/24e.png)
+![Alt text](./images/24e.png)
 
 Docker behaves differently depending on the operating system because containers require a Linux kernel. Here's how storage is handled across platforms:
 

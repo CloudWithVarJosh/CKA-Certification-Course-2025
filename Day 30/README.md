@@ -49,7 +49,7 @@ We need encryption to:
 
 ## Two Main Types of Encryption
 
-![Alt text](/images/30a.png)
+![Alt text](./images/30a.png)
 
 
 ### 1. Symmetric Encryption (Shared Key Encryption)
@@ -97,7 +97,7 @@ We need encryption to:
 
 ### 2. Asymmetric Encryption (Public Key Cryptography)
 
-![Alt text](/images/30a.png)
+![Alt text](./images/30a.png)
 
 - Uses a **key pair**: a **public key** (shared with everyone) and a **private key** (kept secret).
 - Data encrypted with the **public key** can only be decrypted with the **private key**, and vice versa.
@@ -169,7 +169,7 @@ On the other hand, **asymmetric encryption algorithms** like **RSA (Rivest-Shami
 
 When we talk about encryption in cloud and Kubernetes environments, it typically falls into **two categories**:
 
-![Alt text](/images/30b.png)
+![Alt text](./images/30b.png)
 
 ### 1. **Encryption In-Transit**
 
@@ -234,7 +234,7 @@ To make encryption concepts clear, let's walk through four practical scenarios i
 **Use Case:** Protecting Seema's Laptop Hard Disk  
 **Technology Example:** BitLocker (Windows)
 
-![Alt text](/images/30c.png)
+![Alt text](./images/30c.png)
 
 Seema has a Windows laptop with **BitLocker** enabled to encrypt her hard disk. BitLocker uses **symmetric encryption**, typically **AES (Advanced Encryption Standard)**.
 
@@ -249,7 +249,7 @@ Symmetric encryption is **fast** and ideal for **encrypting large amounts of dat
 ---
 
 ### **Scenario 2: Symmetric Encryption Alone Isn't Enough for Internet Communication**  
-![Alt text](/images/30d.png)
+![Alt text](./images/30d.png)
 **Use Case:** Seema wants to access `pinkbank.com` securely  
 **Challenge:** How to share a symmetric key securely?
 
@@ -266,7 +266,7 @@ We'll revisit this in **Scenario 4**, where we solve this using **asymmetric enc
 ---
 
 ### **Scenario 3: Asymmetric Encryption (SSH into EC2 Instance)**  
-![Alt text](/images/30e.png)
+![Alt text](./images/30e.png)
 **Use Case:** Secure login to Ubuntu EC2 instance on AWS  
 **Technology Example:** SSH, Ed25519 keys
 
@@ -315,7 +315,7 @@ Before we jump into Scenario 4, let’s understand **what TLS is and why it matt
 
 Let’s now see how Seema’s browser establishes a secure TLS session with her bank’s website.
 
-![Alt text](/images/30f.png)
+![Alt text](./images/30f.png)
 
 **Use Case:** Seema accesses `pinkbank.com` securely via browser  
 **Technology Example:** TLS (HTTPS), Digital Certificates, Certificate Authorities

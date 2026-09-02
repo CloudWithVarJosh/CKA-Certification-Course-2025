@@ -540,7 +540,7 @@ https://docs.tigera.io/calico/latest/getting-started/kubernetes/self-managed-onp
 
 ## Draining with a PodDisruptionBudget (What the diagram shows)
 
-![Alt text](/images/55a.png)
+![Alt text](./images/55a.png)
 
 We’re draining **worker-1** while a **PDB** protects the *red-deploy* app. The PDB is set to **`minAvailable: 3`** and the Deployment has **4 replicas**, so Kubernetes must keep **≥3 Ready pods** during any *voluntary* disruption (like `kubectl drain`).
 

@@ -78,7 +78,7 @@ In Kubernetes, the way an application manages its **state** has major implicatio
 
 ### What Is a Stateless Application?
 
-![Alt text](/images/40a.png)
+![Alt text](./images/40a.png)
 
 A **stateless application** does not store user-specific data or session information inside its own container or pod. Instead, it relies on **external systems** (like a database or distributed cache) to store that state.
 
@@ -99,7 +99,7 @@ Because state is externalized:
 
 ### What Is a Stateful Application?
 
-![Alt text](/images/40b.png)
+![Alt text](./images/40b.png)
 
 A **stateful application** stores critical data internally — often tied to its filesystem, memory, or a specific volume — and may require persistent identity or ordered startup.
 
@@ -147,7 +147,7 @@ When deploying a **stateful database** on Kubernetes without automation, both **
 
 ## What Is a Kubernetes Operator?
 
-![Alt text](/images/40c.png)
+![Alt text](./images/40c.png)
 
 A **Kubernetes Operator** is a design pattern used to manage complex, often stateful or operationally heavy applications by codifying domain-specific knowledge into a **custom controller** that runs inside the Kubernetes cluster.
 
@@ -283,7 +283,7 @@ So rather than thinking in terms of “either/or,” think:
 
 ## Revisited: Our Custom BackupPolicy Operator
 
-![Alt text](/images/40d.png)
+![Alt text](./images/40d.png)
 
 In our previous lecture, we created a CRD named:
 

@@ -22,7 +22,7 @@ If this **repository** helps you, give it a ⭐ to show your support and help ot
 
 ### **Introduction**
 
-![Alt text](/images/23a.png)
+![Alt text](./images/23a.png)
 
 In Kubernetes, health probes are used to check the status of applications running inside pods. These probes help Kubernetes ensure that only healthy pods are receiving traffic, and unhealthy pods are either given time to recover or restarted as necessary. The **kubelet** is responsible for performing these probes.
 
@@ -30,7 +30,7 @@ In Kubernetes, health probes are used to check the status of applications runnin
 
 ### **Types of Health Probes**
 
-![Alt text](/images/23b.png)
+![Alt text](./images/23b.png)
 
 1. **Readiness Probes (RP)**
 Determines if the application is **ready** to handle traffic. If this probe fails, the Pod is marked as **"Not Ready"** and is removed from Service endpoints, but the container itself is not restarted.
@@ -203,7 +203,7 @@ Here is the revised table with the important words and concepts **bolded** to hi
 
 ### **Probe Mechanisms**
 
-![Alt text](/images/23c.png)
+![Alt text](./images/23c.png)
 
 Kubernetes provides **three mechanisms** for performing health probes:
 

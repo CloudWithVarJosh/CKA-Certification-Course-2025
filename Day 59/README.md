@@ -66,7 +66,7 @@ To get the most out of this lecture, be comfortable with **YAML**—it’s the f
 
 ## Behind the Scenes of kubectl get pods (Why It Matters for JSONPath)
 
-![Alt text](/images/59a.png)
+![Alt text](./images/59a.png)
 
 **From the moment **Shwetangi runs `kubectl get pods`** — what happens**
 
@@ -306,7 +306,7 @@ jsonpath pod.json '$.metadata.labels.app'
 ### Containers (arrays & wildcards)
 
 ```bash
-# Names/images of all containers
+# Names./images of all containers
 jsonpath pod.json '$.spec.containers[*].name'
 jsonpath pod.json '$.spec.containers[*].image'
 

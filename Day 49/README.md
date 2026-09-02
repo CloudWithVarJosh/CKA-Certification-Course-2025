@@ -104,7 +104,7 @@ Though the term "L7 Load Balancer" is common, technically Kubernetes only suppor
 
 ## Real-World Flow: How Ingress Works
 
-![Real-World Ingress Flow](/images/49a.png)
+![Real-World Ingress Flow](./images/49a.png)
 
 Let’s say **Shwetangi** visits `myapp.com/iphone`. How does this external request reach the correct Kubernetes Pod inside the cluster?
 

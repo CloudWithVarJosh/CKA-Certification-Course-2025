@@ -36,7 +36,7 @@ If this **repository** helps you, give it a ⭐ to show your support and help ot
 
 ### **Why Do We Need Requests and Limits?**  
 
-![Alt text](/images/19a.png)
+![Alt text](./images/19a.png)
 
 Imagine a Kubernetes cluster with the following setup:  
 - **Node1** and **Node2**, each with **6 vCPUs and 24GB memory**.  
@@ -67,7 +67,7 @@ To prevent this, we use **Requests and Limits** to ensure that each pod gets its
 
 ## **Applying Requests and Limits to Our Example**  
 
-![Alt text](/images/19d.png)
+![Alt text](./images/19d.png)
 
 We define **requests and limits** as follows:  
 ```yaml
@@ -203,7 +203,7 @@ We briefly discussed the Metrics Server in **Day 7** when covering **Kubernetes 
 
 ## **How Kubernetes Collects Metrics**
 
-![Alt text](/images/19b.png)
+![Alt text](./images/19b.png)
 
 To understand how **`kubectl top nodes`** (and **`kubectl top pods`**) retrieves resource metrics, let's break down the process:
 
@@ -350,7 +350,7 @@ args: ["--vm", "1", "--vm-bytes", "250M", "--vm-hang", "1"]
 
 #### **Why is the Container Killed Despite No Memory Pressure?**  
 
-![Alt text](/images/19c.png)
+![Alt text](./images/19c.png)
 
 A container **may** get terminated when it exceeds its memory limit, but **why does this happen even when the node has enough memory?**  
 

@@ -39,7 +39,7 @@ If this **repository** helps you, give it a ⭐ to show your support and help ot
 
 ## Evolution of Storage in Kubernetes: From In-Tree to CSI Drivers
 
-![Alt text](/images/27a.png)
+![Alt text](./images/27a.png)
 
 Managing **persistent storage** in Kubernetes has come a long way. Initially, storage drivers were built directly into Kubernetes' core codebase, known as **in-tree volume plugins**. Over time, this tightly coupled model proved limiting, leading to the adoption of the **Container Storage Interface (CSI)**—a modular and extensible solution for storage integration.
 
@@ -215,7 +215,7 @@ Learn more: [Kubernetes Documentation on hostPath](https://kubernetes.io/docs/co
 
 ### **Understanding `hostPath` in KIND: How Storage Works Under the Hood**
 
-![Alt text](/images/27b.png)
+![Alt text](./images/27b.png)
 
 When using KIND (Kubernetes IN Docker), it’s important to understand where your `hostPath` volumes are actually created — especially because Docker behaves differently across operating systems.
 
@@ -353,7 +353,7 @@ This confirms that both pods are using the same file from the host node via `hos
 
 ### Persistent Volumes (PVs) & Persistent Volume Claims (PVCs)
 
-![Alt text](/images/27c.png)
+![Alt text](./images/27c.png)
 #### **Persistent Volumes (PVs)**
 
 - **What is a PV?**  
@@ -381,7 +381,7 @@ This confirms that both pods are using the same file from the host node via `hos
 
 In Kubernetes, **PersistentVolumes (PVs)** and **PersistentVolumeClaims (PVCs)** play a central role in persistent storage — but they differ in how they're scoped and used.
 
-![Alt text](/images/27e.png)
+![Alt text](./images/27e.png)
 
 #### **PVs are Cluster-Scoped Resources**
 - A **PersistentVolume (PV)** is a **cluster-wide resource**, just like Nodes or StorageClasses.
@@ -449,7 +449,7 @@ Because from `app2-ns`'s perspective, that PVC does not exist.
 
 ### **Kubernetes Persistent Storage Flow (Manual Provisioning)**
 
-![Alt text](/images/27c.png)
+![Alt text](./images/27c.png)
 
 | **Step** | **Role**                | **Action**                                                                                          | **Details / Notes**                                                                 |
 |----------|-------------------------|------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
@@ -888,7 +888,7 @@ volumeBindingMode: WaitForFirstConsumer  # Ensures the volume is created in the 
 
 2. **WaitForFirstConsumer**:
 
-![Alt text](/images/27d.png)
+![Alt text](./images/27d.png)
    - In a Kubernetes cluster spanning multiple Availability Zones (AZs), **EBS volumes and EC2 instances are AZ-specific resources**.  
    - If a volume is immediately provisioned in one AZ when a PVC is created, and the Pod using the PVC is scheduled in another AZ, the volume cannot be mounted.  
    - The `WaitForFirstConsumer` mode ensures that the volume is created **only after the Pod is scheduled**, ensuring both the Pod and the volume are in the same AZ.  

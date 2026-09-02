@@ -13,7 +13,7 @@ If this **repository** helps you, give it a ⭐ to show your support and help ot
 
 ## **Understanding `docker pull docker.io/library/ubuntu:latest`**
 
-![Ubuntu Pull Process Illustration](/images/2a.png)
+![Ubuntu Pull Process Illustration](./images/2a.png)
 
 The command **`docker pull docker.io/library/ubuntu:latest`** fetches the Ubuntu image (specifically the `:latest` tag) from the **Docker Hub default registry** (`docker.io`). By default, if you do not specify a registry or fully qualify the image name, Docker assumes it is hosted on Docker Hub.
 

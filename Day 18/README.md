@@ -42,7 +42,7 @@ The **ideal scheduling strategy** requires using **both** Taints & Tolerations *
 
 Let’s apply our knowledge to a real-world scenario.  
 
-![Alt text](/images/18a.png)
+![Alt text](./images/18a.png)
 
 ### **Cluster Setup**
 We have **two worker nodes** in our cluster:  

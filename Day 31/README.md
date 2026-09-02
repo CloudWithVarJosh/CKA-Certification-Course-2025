@@ -48,7 +48,7 @@ In this session, we revisited the **client-server model**, a foundational concep
 
 ### Client and Server – A Refresher
 
-![Alt text](/images/31-1.png)
+![Alt text](./images/31-1.png)
 
 A **client** is the one that initiates a request; the **server** is the one that responds.
 
@@ -67,7 +67,7 @@ This direction of communication is critical when we later talk about **client ce
 
 ### **Public Key Cryptography in DevOps: Focus on SSH & HTTPS**  
 
-![Alt text](/images/31-2.png)
+![Alt text](./images/31-2.png)
 
 Public Key Cryptography (PKC) underpins authentication and secure communication across multiple **application-layer protocols**. While it's used in **email security (PGP, S/MIME), VoIP, database connections, and secure messaging**, a **DevOps engineer primarily interacts with SSH and HTTPS** for managing infrastructure.
 
@@ -176,7 +176,7 @@ Public Key Cryptography enables entities—**users, servers, or systems**—to p
 
 #### **In SSH:**
 
-![Alt text](/images/31-3.png)
+![Alt text](./images/31-3.png)
 
 SSH supports **mutual authentication**, where:
 
@@ -297,7 +297,7 @@ Rather than encrypting all data directly using asymmetric cryptography, **Public
 * In **TLS**:
 
   * **Older TLS (e.g., TLS 1.2 with RSA key exchange)**
-![Alt text](/images/31-8.png)
+![Alt text](./images/31-8.png)
     * The client generates a session key.
     * It encrypts the session key using the server’s public key (from its certificate).
     * The server decrypts it using its private key.
@@ -305,7 +305,7 @@ Rather than encrypting all data directly using asymmetric cryptography, **Public
       **Drawback**: If the server’s private key is compromised, past sessions can be decrypted (no forward secrecy).
 
   * **Modern TLS (e.g., TLS 1.3 or TLS 1.2 with ECDHE)**
-![Alt text](/images/31-4.png)
+![Alt text](./images/31-4.png)
     * The client and server perform an ephemeral key exchange (e.g., ECDHE – Elliptic Curve Diffie-Hellman Ephemeral).
     * Both sides derive the session key collaboratively — it is never transmitted directly.
       **Advantage**: Even if the server’s private key is compromised later, past communications remain secure (forward secrecy).
@@ -334,7 +334,7 @@ When enabling HTTPS or TLS for applications, certificates must be signed to be t
 
 ### Public CA
 
-![Alt text](/images/31-5.png)
+![Alt text](./images/31-5.png)
 
 When you visit a website like `pinkbank.com`, your browser needs a way to verify that the server it’s talking to is indeed `pinkbank.com` and not someone pretending to be it. That’s where a **Certificate Authority (CA)** comes into play.
 
@@ -358,7 +358,7 @@ PKI is a framework that manages digital certificates, keys, and Certificate Sign
 
 ### Private CA
 
-![Alt text](/images/31-6.png)
+![Alt text](./images/31-6.png)
 
 Just like browsers come with a list of trusted CAs, you can manually add a CA’s public key to your trust store (e.g., in a browser or an operating system).
 
@@ -384,7 +384,7 @@ To securely expose an internal app as `https://app1.internal` without browser wa
 
 ### Self-Signed Certificate
 
-![Alt text](/images/31-7.png)
+![Alt text](./images/31-7.png)
 
 A **self-signed certificate** is a certificate that is **signed with its own private key**, rather than being issued by a trusted Certificate Authority (CA).
 

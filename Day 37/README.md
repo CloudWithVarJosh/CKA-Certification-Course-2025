@@ -59,7 +59,7 @@ In contrast, Kubernetes **does support creation of Service Accounts**, specifica
 
 Kubernetes supports multiple authentication methods. Below are the most common ones, along with their real-world implications and usage.
 
-![Alt text](/images/37a.png)
+![Alt text](./images/37a.png)
 
 ---
 
@@ -253,7 +253,7 @@ This approach enhances **security and scalability**, as organizations can centra
 
 ### Understanding Who Interacts with a Kubernetes Cluster
 
-![Alt text](/images/37b.png)
+![Alt text](./images/37b.png)
 
 There are broadly two types of entities that interact with a Kubernetes cluster:
 
@@ -266,7 +266,7 @@ There are broadly two types of entities that interact with a Kubernetes cluster:
 ### **Service Accounts in Kubernetes**  
 While human users authenticate to a Kubernetes cluster using mechanisms such as **External Identity Providers & TLS certificates**, any **non-human interaction** with the cluster is typically done through **Service Accounts**.
 
-![Alt text](/images/37c.png)
+![Alt text](./images/37c.png)
 
 ### **Why Are Service Accounts Necessary?**  
 Service Accounts serve as identities for workloads and automation tools interacting with Kubernetes. Instead of using a normal user account, Service Accounts allow these systems to securely authenticate and perform operations within the cluster.
@@ -443,7 +443,7 @@ You can decode the token on [jwt.io](https://jwt.io) to inspect its claims (like
 > However, for specialized workloads — such as monitoring, logging, or security tools that run as **DaemonSets** — custom **ServiceAccounts** with tailored permissions are typically used. These pods follow the same authentication mechanism, but their authorization (via RBAC) is scoped to the needs of the tool.
 >These tools are typically deployed using **Helm**, which simplifies the setup by provisioning all necessary Kubernetes resources — such as DaemonSets, ServiceAccounts, Services, and even Custom Resource Definitions (CRDs). We’ll explore CRDs later in this course.
 
-![Alt text](/images/37d.png)
+![Alt text](./images/37d.png)
 
 1. **ServiceAccount Automatically Mounted**
    Whenever a Pod is created — whether by a Deployment, StatefulSet, ReplicaSet, Job, cronjob, DaemonSet, or directly — a ServiceAccount (SA) is automatically associated with it.
@@ -499,7 +499,7 @@ You can decode the token on [jwt.io](https://jwt.io) to inspect its claims (like
 
 We can categorize ServiceAccount tokens into **three types based on usage and lifecycle** — but it’s important to know that **projected tokens are actually obtained via the TokenRequest API**, so they’re not separate in terms of mechanism.
 
-![Alt text](/images/37e.png)
+![Alt text](./images/37e.png)
 ---
 
 ### 1. **Bound ServiceAccount Tokens (aka Projected Tokens via TokenRequest API)**
@@ -550,7 +550,7 @@ We can categorize ServiceAccount tokens into **three types based on usage and li
 In Kubernetes, many systems interact with the API server in automated ways — without human users. These **non-human access patterns** fall into two broad categories: **external tools** and **internal workloads**.
 
 
-![Alt text](/images/37f.png)
+![Alt text](./images/37f.png)
 
 ---
 
@@ -559,7 +559,7 @@ In Kubernetes, many systems interact with the API server in automated ways — w
 These are **Kubernetes-native agents and controllers** that run as Pods within the cluster. They communicate with the Kubernetes API server to **read, watch, or mutate** cluster resources as part of their function.
 
 
-![Alt text](/images/37g.png)
+![Alt text](./images/37g.png)
 
 #### **Examples**:
 
@@ -619,7 +619,7 @@ These are **Kubernetes-native agents and controllers** that run as Pods within t
 
 These tools run **outside the Kubernetes cluster** but interact with the API server to deploy, configure, or query workloads.
 
-![Alt text](/images/37h.png)
+![Alt text](./images/37h.png)
 
 #### **Examples**:
 

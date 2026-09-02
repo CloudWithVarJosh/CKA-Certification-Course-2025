@@ -41,7 +41,7 @@ Ephemeral storage refers to storage that is temporary, meaning that any data wri
 
 #### **EmptyDir**
 
-![Alt text](/images/26a.png)
+![Alt text](./images/26a.png)
 
 **What is EmptyDir?**  
   - `emptyDir` is an empty directory created when a Pod is assigned to a node. The directory exists for the lifetime of the Pod.
@@ -139,7 +139,7 @@ Using `emptyDir` enables inter-container file sharing within a Pod.
 
 #### **Downward API**
 
-![Alt text](/images/26a.png)
+![Alt text](./images/26a.png)
 
 **What is the Downward API?**  
 The Downward API in Kubernetes provides a mechanism for Pods to access metadata about themselves or their environment. This metadata can include information such as the Pod's name, namespace, labels, annotations, or resource limits. It is injected into containers in a Pod either as **environment variables** or through mounted **files via volumes**.

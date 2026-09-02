@@ -73,7 +73,7 @@ In this demo we’ll stand up a small, real cluster on VMs: one control-plane no
 **Note:** For full context and step-by-step fixes, see **[Calico Troubleshooting](#calico-troubleshooting)** at the end of this guide.
 
 
-![Alt text](/images/54a.png)
+![Alt text](./images/54a.png)
 
 Create two SGs: **control-plane-sg** and **data-plane-sg** (same VPC). Allow **all egress** on both.
 

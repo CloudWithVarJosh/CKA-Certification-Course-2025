@@ -59,7 +59,7 @@ Let’s begin with two crisp definitions:
 
 ## The Classic Three-Tier Architecture
 
-![Alt text](/images/44a.png)
+![Alt text](./images/44a.png)
 
 We'll use a basic 3-tier web application to explore this further:
 
@@ -128,7 +128,7 @@ That’s why **modern architectures try to externalize state** — like moving s
 
 ## Upgrading the Architecture: Using Amazon ElastiCache for Session Management
 
-![Alt text](/images/44b.png)
+![Alt text](./images/44b.png)
 
 Let’s improve our earlier design by introducing a **dedicated session store**.
 
@@ -180,7 +180,7 @@ That’s how you build modern, cloud-native architectures that are resilient, sc
 
 ## What It Takes to Run a Database
 
-![Alt text](/images/44c.png)
+![Alt text](./images/44c.png)
 
 Before we get into how Kubernetes handles databases, let’s understand how production-grade databases like **MySQL**, **PostgreSQL**, or **MongoDB** are typically deployed outside Kubernetes.
 
@@ -252,7 +252,7 @@ Chained replication reduces load on the primary but:
 
 ## Problem: What Happens If a Replica Crashes?
 
-![Alt text](/images/44d.png)
+![Alt text](./images/44d.png)
 
 Let’s say **Replica-1 crashes**, and Kubernetes reschedules it on another node. If it comes back with a **new name or DNS**, the **primary will not recognize it** — and replication will break.
 
@@ -616,7 +616,7 @@ This demo will walk you through deploying a production-aligned **MySQL StatefulS
 
 ## Cluster Details
 
-![Alt text](/images/44e.png)
+![Alt text](./images/44e.png)
 
 This demo is built on an **Amazon EKS cluster** deployed in the `us-east-2` (Ohio) region, spanning **three availability zones**: `us-east-2a`, `us-east-2b`, and `us-east-2c`. The cluster consists of **four worker nodes** based on `t3.small` instances.
 
@@ -871,7 +871,7 @@ kubectl apply -f 02-mysql-hs.yaml
 
 ### Why a Headless Service?
 
-![Alt text](/images/44f.png)
+![Alt text](./images/44f.png)
 
 * A **headless service** (`clusterIP: None`) doesn’t perform load balancing like a normal service. Instead, it **exposes individual pod DNS records**, allowing clients to directly reach each pod in the StatefulSet.
 

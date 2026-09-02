@@ -51,7 +51,7 @@ This command helps you identify the API group, version, and shortnames to work w
 
 ## **2. ReplicationController (rc)**
 
-![Alt text](/images/10a.png)
+![Alt text](./images/10a.png)
 
 ### **What is a ReplicationController?**
 - Ensures a specified number of pod replicas are running at any given time.
@@ -68,7 +68,7 @@ It is crucial to have a solid understanding of **labels** and **selectors**, as 
 
 **Labels and Selectors Analogy**
 
-![Alt text](/images/10c.png)
+![Alt text](./images/10c.png)
 
 Imagine you have a DevOps team consisting of 5 engineers with the following areas of expertise:
 
@@ -82,7 +82,7 @@ In this scenario, think of each area of expertise as a **label** that defines th
 - `Automation Expert`
 - `CI/CD Expert`
 
-![Alt text](/images/10d.png)
+![Alt text](./images/10d.png)
 
 If you want to **filter** the team based on a specific expertise, you can apply a **selector**. For instance:
 
@@ -148,7 +148,7 @@ kubectl create rc nginx-rc --image=nginx --replicas=3
 
 ## **3. ReplicaSet (rs)**
 
-![Alt text](/images/10b.png)
+![Alt text](./images/10b.png)
 
 ### **What is a ReplicaSet?**
 - ReplicaSet is an improved version of ReplicationController.
@@ -180,7 +180,7 @@ spec:
 
 **Labels and Selectors** in Kubernetes are of two categories:
 
-![Alt text](/images/10e.png)
+![Alt text](./images/10e.png)
 
 - **Equality Selectors:**  
   These match resources that have a specific label with an exact value. They use the `=` or `!=` operators to check for equality.  
@@ -281,7 +281,7 @@ spec:
 
 ## **4. Deployments**
 
-![Alt text](/images/10f.png)
+![Alt text](./images/10f.png)
 
 ### **What is a Deployment?**
 - Deployments build on top of ReplicaSets.

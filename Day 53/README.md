@@ -72,7 +72,7 @@ I’ve streamlined the steps to make the setup easier to understand and replicat
 
 ## **What We’re Going to Do in This Demo**
 
-![Alt text](/images/53a.png)
+![Alt text](./images/53a.png)
 
 1. Deploy NGF in a KIND cluster using Helm.
 2. Expose the NGF Gateway via NodePort for local access.

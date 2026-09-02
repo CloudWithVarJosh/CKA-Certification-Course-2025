@@ -12,7 +12,7 @@ If this **repository** helps you, give it a ⭐ to show your support and help ot
 
 ## Challenges with Docker
 
-![Alt text](/images/6a.png)
+![Alt text](./images/6a.png)
 
 - **Auto-Scaling**: Docker lacks native support for automatic scaling of containers based on resource utilization or demand, requiring external orchestration tools like Kubernetes to manage dynamic scaling effectively.
 - **Load Balancing**: Docker does not offer built-in, sophisticated load-balancing mechanisms across multiple containers or hosts, making it reliant on third-party tools or manual configurations.
@@ -21,7 +21,7 @@ If this **repository** helps you, give it a ⭐ to show your support and help ot
 
 ## Hello Kubernetes!!
 
-![Alt text](/images/6b.png)
+![Alt text](./images/6b.png)
 
 ###  Why Kubernetes?
 - Kubernetes is not just another container orchestration tool – it is the industry-standard for managing containers at scale.

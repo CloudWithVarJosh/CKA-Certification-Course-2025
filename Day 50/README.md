@@ -54,7 +54,7 @@ This demo focuses on **path-based routing**, where requests are routed to differ
 
 ### What Are We Going to Deploy?
 
-![Alt text](/images/49c.png)
+![Alt text](./images/49c.png)
 
 Based on the architecture diagram, here’s what the deployment involves:
 
@@ -104,7 +104,7 @@ This approach allows clean separation of traffic based on platform while keeping
 
 ### **Cluster Configuration**
 
-![Alt text](/images/49b.png)
+![Alt text](./images/49b.png)
 This demo is built on an **Amazon EKS cluster** deployed in the `us-east-2 (Ohio)` region. The cluster spans two Availability Zones: `us-east-2a` and `us-east-2b`. It includes **four worker nodes** based on `t3.small` EC2 instances.
 
 * **Why 4 nodes?** This demo uses 4 worker nodes to showcase features like `topologySpreadConstraints`, which rely on sufficient node distribution across AZs. However, you can reduce this to 2 for basic Ingress setups.
@@ -715,7 +715,7 @@ In **Demo 1**, you're performing **path-based routing** using an ALB with `/ipho
 ---
 
 ### `target-type: ip` — Direct-to-Pod Routing via VPC CNI
-![Alt text](/images/49d.png)
+![Alt text](./images/49d.png)
 When you set `target-type: ip`, the ALB registers **Pod IPs** directly in its Target Groups. This is possible because the **AWS VPC CNI plugin** assigns each Pod a routable secondary IP from the VPC subnet range. The Kubernetes `Service` is still needed, but only for discovering the backend Pods — it does not participate in traffic forwarding.
 
 > Reduces network hops and supports Pod-level health checks.
@@ -737,7 +737,7 @@ Suitable for clusters using **AWS VPC CNI** (default on EKS).
 ---
 
 ### `target-type: instance` — NodePort-Based Routing via kube-proxy
-![Alt text](/images/49e.png)
+![Alt text](./images/49e.png)
 When using `target-type: instance`, the ALB registers **EC2 worker nodes** (not Pod IPs) in the Target Group. For this to work, the backing Kubernetes Service must be of type **NodePort**, which exposes a high-range port on each node. The ALB sends traffic to these NodePorts. Then, the traffic flows through **`kube-proxy`** to reach a matching Pod using internal routing.
 
 > ⚠️ Adds more hops and only supports node-level health checks.

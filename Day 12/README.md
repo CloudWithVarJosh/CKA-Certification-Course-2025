@@ -42,7 +42,7 @@ In Kubernetes, applications run inside **pods**, and these pods are **ephemeral*
 - Kubernetes doesn’t automatically handle this, so we need a way to ensure reliable **pod-to-pod and external access**.  
 
 ## The Solution: Kubernetes Services 
-![Alt text](/images/12a.png)
+![Alt text](./images/12a.png)
 A **Kubernetes Service** acts as a **stable communication endpoint** for pods. It provides:  
 
 - **A fixed IP and DNS name** so that pods can always be found, even if their individual IPs change.  
@@ -99,7 +99,7 @@ User ---> frontend-svc ---> Frontend Pod ---> backend-svc ---> Backend Pod
 A **ClusterIP** service is the default type of Kubernetes service that exposes applications **internally** within the cluster. It allows communication between different pods using an automatically assigned **internal IP address**, making it ideal for inter-service communication.
 
 ### **Analogy:**  
-![Alt text](/images/12b.png)
+![Alt text](./images/12b.png)
 
 To make understanding **Kubernetes Services** easier, we'll use an **office building complex analogy** throughout this guide. Here's how the analogy maps to Kubernetes concepts:  
 
@@ -131,7 +131,7 @@ HR (Pod) → Extension 11 (ClusterIP) → Finance (Pod)
 
 ## **Example: Demonstrating ClusterIP with Frontend (NGINX) and Backend (http-echo)**  
 
-![Alt text](/images/12c.png)
+![Alt text](./images/12c.png)
 
 ### **Architecture Overview**  
 We will create a **two-tier application** where:  
@@ -272,7 +272,7 @@ This creates a **three-node cluster** with one control plane node and two worker
 
 ## **Understanding `extraPortMappings` Configuration**
 
-![Alt text](/images/12f.png)
+![Alt text](./images/12f.png)
 ```yaml
 extraPortMappings:
   - containerPort: 31000
@@ -302,7 +302,7 @@ http://<NodeIP>:<NodePort>
 ```
 ### **Analogy:**  
 
-![Alt text](/images/12d.png)
+![Alt text](./images/12d.png)
 
 To make understanding **Kubernetes Services** easier, we'll use an **office building complex analogy** throughout this guide. Here's how the analogy maps to Kubernetes concepts:  
 
@@ -394,7 +394,7 @@ This service exposes the frontend using the NodePort **`31000`** on all worker n
 
 ## **How a NodePort Service Handles Requests (Step-by-Step Flow)**  
 
-![Alt text](/images/12e.png)
+![Alt text](./images/12e.png)
 
 Let’s assume:  
 - A worker node has the IP **172.18.0.4**.  
@@ -425,7 +425,7 @@ A **LoadBalancer service** provides a **single, external IP address** to expose 
 
 ### **Analogy:**  
 
-![Alt text](/images/12g.png)
+![Alt text](./images/12g.png)
 
 To make understanding **Kubernetes Services** easier, we'll use an **office building complex analogy** throughout this guide. Here's how the analogy maps to Kubernetes concepts:  
 
@@ -477,7 +477,7 @@ spec:
 
 ### **How This Works Behind the Scenes:**  
 
-![Alt text](/images/12h.png)
+![Alt text](./images/12h.png)
 
 ```plaintext
 <LoadBalancer External IP>:80 → NodePort (31000) 
@@ -503,7 +503,7 @@ An **ExternalName service** is a **special type of service** that **maps an inte
 - Instead, it **returns a CNAME record** that **redirects traffic** to an **external domain**. 
 
 ### **Analogy:**  
-![Alt text](/images/12j.png)
+![Alt text](./images/12j.png)
 To make understanding **Kubernetes Services** easier, we'll use an **office building complex analogy** throughout this guide. Here's how the analogy maps to Kubernetes concepts:  
 
 | **Analogy Component**           | **Kubernetes Concept**                                      |  
@@ -541,7 +541,7 @@ spec:
 
 ### **Example Scenario:**  
 
-![Alt text](/images/12k.png)
+![Alt text](./images/12k.png)
 
 Suppose your **backend pods** need to connect to an **external database** hosted on **Amazon RDS**.  
 

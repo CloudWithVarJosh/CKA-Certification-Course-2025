@@ -12,7 +12,7 @@ If this **repository** helps you, give it a ⭐ to show your support and help ot
 
 ### **Important Docker Flags**
 
-![Docker Flags Overview](/images/3a.png)
+![Docker Flags Overview](./images/3a.png)
 
 ```bash
 docker run -d -p 8080:80 --name my-nginx-cont nginx

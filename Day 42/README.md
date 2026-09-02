@@ -57,7 +57,7 @@ This parallels how infrastructure environments are managed — you might test ne
 
 ### The Problem
 
-![Alt text](/images/42a.png)
+![Alt text](./images/42a.png)
 
 Imagine you have an application named **app1** which runs in **three environments**: `dev`, `stage`, and `prod`. Each environment is made up of three logical tiers: **frontend**, **backend**, and **data**. Each tier typically involves several Kubernetes objects — such as:
 

@@ -39,7 +39,7 @@ If this **repository** helps you, give it a ⭐ to show your support and help ot
 
 ## What is Scaling?
 
-![Alt text](/images/20a.png)
+![Alt text](./images/20a.png)
 
 Scaling refers to **adjusting the resources** available to an application based on its **demand/load**. The key objective is to ensure the app has **enough resources** to handle current traffic, **without wasting resources** when demand is low.
 
@@ -74,7 +74,7 @@ Scaling refers to **adjusting the resources** available to an application based 
 
 ## Scaling Approaches
 
-![Alt text](/images/20b.png)
+![Alt text](./images/20b.png)
 **Both Scaling Types Have Two Approaches:**
 
 ### **Horizontal Scaling:**
@@ -203,7 +203,7 @@ These metrics are provided by the **Metrics Server** (explained below).
 
 #### **Flow with Default Resource Metrics (CPU & Memory)**
 
-![Alt text](/images/20c.png)
+![Alt text](./images/20c.png)
 
 1. **Metric Collection**:
    - The **kubelet**, present on every node in the cluster, runs **cAdvisor** internally.
@@ -251,7 +251,7 @@ To utilize custom metrics:
 
 #### Flow with Custom Metrics
 
-![Alt text](/images/20d.png)
+![Alt text](./images/20d.png)
 
 
 1. **Metric Collection**:

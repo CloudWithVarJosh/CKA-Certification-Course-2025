@@ -16,7 +16,7 @@ A **three-tier architecture** is a common software design pattern that separates
 
 ### Monolithic Architecture  
 
-![Alt text](/images/11c.png)
+![Alt text](./images/11c.png)
 
 Before moving to **3-tier architecture**, let's understand **monolithic design**, where everything existed as a **single codebase**.
 
@@ -34,7 +34,7 @@ Modern applications **typically avoid** monolithic or single codebase designs, b
 
 ## **1. Three-Tier Architecture Overview**  
 
-![Alt text](/images/11a.png)
+![Alt text](./images/11a.png)
 
 | **Tier**       | **Description**  | **Example Technologies** |
 |---------------|----------------|--------------------------|
@@ -154,7 +154,7 @@ Microservices address these issues by **breaking down large, tightly coupled tie
 
 # **4. Introduction to Microservices**  
 
-![Alt text](/images/11b.png)
+![Alt text](./images/11b.png)
 
 ## **Why Do We Need Microservices?**  
 

@@ -11,7 +11,7 @@ If this **repository** helps you, give it a ⭐ to show your support and help ot
 ---
 ## Imperative vs. Declarative
 
-![Alt text](/images/9b.png)
+![Alt text](./images/9b.png)
 
 There are two fundamental approaches to system configuration:
   1. **Imperative**: Tells the system *how* to achieve a desired state. Think of it as a step-by-step instruction manual. **Examples** below:
@@ -73,7 +73,7 @@ There are two fundamental approaches to system configuration:
 
 You can clearly observe the **simplicity** and **readability** of YAML in the snippet below:
 
-![Alt text](/images/9a.png)
+![Alt text](./images/9a.png)
 
 
 ### Basic YAML Data Structures

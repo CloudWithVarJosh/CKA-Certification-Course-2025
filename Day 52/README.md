@@ -116,7 +116,7 @@ We leveraged some of these annotations in our demos. The full AWS LBC annotation
 
 ### 1. Cross-Namespace, Multi-Tenancy & RBAC
 
-![Alt text](/images/52a.png)
+![Alt text](./images/52a.png)
 
 **a) Namespace Scope Limitation**
 Ingress is a **namespace-scoped** resource, meaning it can only reference Services **within the same namespace**.
@@ -192,7 +192,7 @@ A **Special Interest Group (SIG)** is a working group within the Kubernetes open
 
 ## Gateway API Resource Model and Role Alignment
 
-![Alt text](/images/52c.png)
+![Alt text](./images/52c.png)
 
 Gateway API introduces a resource model that separates **infrastructure** from **application routing**, making it easier to manage multi-tenant environments and delegate responsibilities across teams. These resources are intentionally modeled after the roles that typically exist in organizations running Kubernetes.
 
@@ -263,7 +263,7 @@ Gateway API goes beyond the HTTP/S-only limitation of Ingress by supporting **mu
 
 This diagram illustrates how the **Gateway API** components interact in a Kubernetes environment using the **NGINX Gateway Fabric** as an example. It follows the sequence from the controller detecting configuration changes to routing traffic to the correct backend.
 
-![Alt text](/images/52b.png)
+![Alt text](./images/52b.png)
 
 ---
 

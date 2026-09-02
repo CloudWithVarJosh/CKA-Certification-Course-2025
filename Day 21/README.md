@@ -36,7 +36,7 @@ Welcome to Day 21! Today, we explore **multi-container pods**, an essential Kube
 ---
 
 ### **Why Multi-Container Pods?**
-![Alt text](/images/21c.png)
+![Alt text](./images/21c.png)
 
 **Why not just use separate pods?**  
 In Kubernetes, pods provide a **shared execution environment**, making them ideal for situations where containers need to work **tightly together**. For instance:
@@ -70,8 +70,8 @@ Typically, a **multi-container pod** includes **one primary container** (the mai
 
 ### **Multi-Container Pod Patterns**
 
-![Alt text](/images/21a.png)
-![Alt text](/images/21b.png)
+![Alt text](./images/21a.png)
+![Alt text](./images/21b.png)
 
 Multi-container pods generally follow four key patterns:
 

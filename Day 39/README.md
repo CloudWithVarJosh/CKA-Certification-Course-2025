@@ -45,7 +45,7 @@ If you've been following this course from the beginning, you already know how mu
 
 ## What is a Custom Resource?
 
-![Alt text](/images/39a.png)
+![Alt text](./images/39a.png)
 
 A **custom resource** is any resource that does not exist in Kubernetes by default but is introduced by the user or an external system to extend the Kubernetes API.
 
@@ -156,7 +156,7 @@ Online docs like [Kubernetes API Reference](https://kubernetes.io/docs/reference
 
 ## Understanding Controllers and Custom Controllers in Kubernetes
 
-![Alt text](/images/39b.png)
+![Alt text](./images/39b.png)
 
 When we discussed the **Kubernetes architecture** earlier in the course, we talked about the **`kube-controller-manager`** — which acts as an **umbrella for multiple built-in controllers** running in the cluster.
 

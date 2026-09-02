@@ -109,7 +109,7 @@ Understanding this architecture gives you a clear mental model of how Kubernetes
 
 ## **1. Kubernetes API Endpoints Overview**
 
-![Alt text](/images/35c.png)
+![Alt text](./images/35c.png)
 
 At a high level, the API server serves multiple paths. Each path corresponds to a different kind of functionality:
 
@@ -860,7 +860,7 @@ We’ll cover custom admission controllers in **Day 38** in more depth.
 
 ### Scenario 1: Using Node + Webhook Authorizer Only
 
-![Alt text](/images/35a.png)
+![Alt text](./images/35a.png)
 
 API server configuration:
 
@@ -907,7 +907,7 @@ API server configuration:
 
 ### Scenario 2: Node + Webhook + RBAC (Layered)
 
-![Alt text](/images/35b.png)
+![Alt text](./images/35b.png)
 
 API server configuration:
 

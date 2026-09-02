@@ -26,7 +26,7 @@ If this **repository** helps you, give it a ⭐ to show your support and help ot
 
 ## **Understanding DaemonSets in Kubernetes**
 
-![Alt text](/images/29a.png)
+![Alt text](./images/29a.png)
 
 A **DaemonSet** ensures that **exactly one Pod runs on each node** in the cluster.  
 As new nodes are added to the cluster, Kubernetes automatically **schedules a Pod** onto the new node.  
@@ -331,7 +331,7 @@ This is where **Jobs** and **CronJobs** come into the picture.
 
 ### **What is a Job in Kubernetes?**
 
-![Alt text](/images/29b.png)
+![Alt text](./images/29b.png)
 
 A **Job** is a Kubernetes resource that **creates one or more Pods** to **run a specific task to completion**.  
 Once the task finishes successfully (Pod status = `Completed`), the Job is considered **finished**.
@@ -452,7 +452,7 @@ kubectl describe job hello-job
 
 ## **What is a CronJob in Kubernetes?**
 
-![Alt text](/images/29c.png)
+![Alt text](./images/29c.png)
 
 A **CronJob** allows you to **schedule Jobs to run at specific times**, similar to how **Linux crontab** works.
 

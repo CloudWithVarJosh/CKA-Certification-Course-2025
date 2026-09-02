@@ -11,7 +11,7 @@ If this **repository** helps you, give it a ⭐ to show your support and help ot
 ---
 
 ## What is Pod?
-![Alt text](/images/7a.png)
+![Alt text](./images/7a.png)
 
 ## What are **Network namespaces**?
 - **Network namespaces** in Kubernetes provide an isolated network environment for each Pod. Each Pod has its own unique network namespace, which means it has its own IP address, network interfaces, and routing tables.
@@ -21,17 +21,17 @@ If this **repository** helps you, give it a ⭐ to show your support and help ot
 
 
 ## What is a Deployment?
-![Alt text](/images/7b.png)
+![Alt text](./images/7b.png)
 
 
-![Alt text](/images/7f.png)
+![Alt text](./images/7f.png)
 - **Deployments** wrap **ReplicaSets** to manage scaling and updates. A Deployment ensures that the desired number of Pods are running and takes care of versioning and rolling updates.
 - **ReplicaSets** wrap **Pods** by maintaining a stable set of replica Pods and ensuring that the specified number of Pods are running at all times, even in case of Pod failure.
 - **Pods** wrap **Containers**. A Pod is the smallest deployable unit in Kubernetes, and it contains one or more containers that share the same network namespace and storage volumes.
 
 # Kubernetes Architecture
 
-![Alt text](/images/7c.png)
+![Alt text](./images/7c.png)
 
 Kubernetes operates on a master-worker architecture, where:
 
@@ -90,7 +90,7 @@ Kubernetes operates on a master-worker architecture, where:
 
 ## **Kubernetes: Python Frontend, Redis Service, kube-proxy, and CNI Interaction**
 
-![Alt text](/images/7d.png)
+![Alt text](./images/7d.png)
 
 1. **Python Frontend to Redis Service:**
     * The Python frontend attempts to connect to the Redis Service using the Service’s DNS name. DNS name to IP translation is primarily performed by CoreDNS, which replaced kube-DNS as the default DNS server within Kubernetes.
@@ -159,7 +159,7 @@ ___
 
 # **Kubernetes Deployment Workflow**
 
-![Alt text](/images/7e.png)
+![Alt text](./images/7e.png)
 
 This process outlines the steps that occur when you apply a Kubernetes Deployment, from creation to Pod scheduling and running.
 

@@ -62,7 +62,7 @@ Admission controllers are central to enforcing **security**, **governance**, and
 
 ## Request Lifecycle Recap
 
-![Alt text](/images/38a.png)
+![Alt text](./images/38a.png)
 
 A typical API request to Kubernetes (e.g., via `kubectl`) goes through the following phases:
 
@@ -101,7 +101,7 @@ Admission Controllers play a key role in:
 * Applying default values or transformations
 * Ensuring compliance with cluster standards
 
-![Alt text](/images/38c.png)
+![Alt text](./images/38c.png)
 
 Admission Controllers are broadly classified into:
 
@@ -115,7 +115,7 @@ Admission Controllers are broadly classified into:
 
 These are pre-packaged with Kubernetes and implemented as **admission plugins** that apply logic to API requests during their lifecycle. Built-in ACs fall into three main categories:
 
-![Alt text](/images/38b.png)
+![Alt text](./images/38b.png)
 
 * **Mutating ACs**
   *(Examples: `MutatingAdmissionWebhook`, `DefaultStorageClass`)*
@@ -376,7 +376,7 @@ When built-in controllers are not sufficient for your use case, Kubernetes lets 
 
 ## Understanding OPA in Authorization vs Admission Control
 
-![Alt text](/images/38d.png)
+![Alt text](./images/38d.png)
 
 In **Day 35**, we introduced **Webhook Authorization** and discussed how Kubernetes can outsource access decisions to tools like **OPA (Open Policy Agent)** or **Gatekeeper**, enabling both **authorization** and **policy enforcement**.
 
@@ -619,7 +619,7 @@ Rule of Thumb:
 
 ### What Do Enterprises Use in Production?
 
-![Alt text](/images/38e.png)
+![Alt text](./images/38e.png)
 
 Most production clusters use a **layered authorization and admission model** to balance security, flexibility, and operational simplicity:
 
@@ -677,7 +677,7 @@ The **execution sequence** of admission controllers is divided into two phases: 
 
 ### Admission Controller Sequence
 
-![Alt text](/images/38f.png)
+![Alt text](./images/38f.png)
 
 1. **All Mutating Admission Controllers** are executed **first**, in the order they are configured in `--enable-admission-plugins`.
 

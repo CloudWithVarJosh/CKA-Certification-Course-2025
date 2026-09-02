@@ -51,7 +51,7 @@ By the end, you'll have hands-on experience with the correct, production-grade w
 
 Before we begin, let’s establish some common terminology that you’ll see throughout this lecture.
 
-![Alt text](/images/45a.png)
+![Alt text](./images/45a.png)
 
 ---
 
@@ -278,7 +278,7 @@ This error occurs because Docker Hub **requires authentication** for private rep
 
 Kubernetes itself **does not pull container images**. This responsibility is delegated to the **Container Runtime Interface (CRI)** — such as **containerd**, or **CRI-O** — running on each node.
 
-![Alt text](/images/45b.png)
+![Alt text](./images/45b.png)
 
 To authenticate to private registries, Kubernetes uses **image pull secrets**, which store credentials in a format compatible with Docker (`kubernetes.io/dockerconfigjson`). These credentials typically include:
 
@@ -873,7 +873,7 @@ Whether you're setting up a production CI/CD pipeline, onboarding internal teams
 
 Here are key official references that complement this lecture:
 
-* 🔗 Kubernetes Docs — [Pull an Image from a Private Registry](https://kubernetes.io/docs/concepts/containers/images/#using-a-private-registry)
+* 🔗 Kubernetes Docs — [Pull an Image from a Private Registry](https://kubernetes.io/docs/concepts/containers./images/#using-a-private-registry)
 * 🔗 Kubernetes Docs — [Service Accounts](https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/)
 * 🔗 Kubernetes Docs — [Configure Pods to Use ImagePullSecrets](https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/)
 * 🔗 Docker Docs — [docker-registry secret type](https://docs.docker.com/engine/reference/commandline/login/)

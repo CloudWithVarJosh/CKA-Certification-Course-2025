@@ -13,7 +13,7 @@ If this **repository** helps you, give it a ⭐ to show your support and help ot
 
 ## **How Were Development and Deployment Done Before Docker? Why Do We Need Docker? What Challenges Does It Solve?**
 
-![Alt text](/images/1a.png)
+![Alt text](./images/1a.png)
 
 Before Docker, the software lifecycle involved several manual and error-prone processes:
 
@@ -55,7 +55,7 @@ Before Docker, the software lifecycle involved several manual and error-prone pr
 
 ## **What Is Docker?**
 
-![Alt text](/images/1b.png)
+![Alt text](./images/1b.png)
 
 Docker revolutionizes development and deployment by introducing **containers**. Let’s compare:
 
@@ -95,7 +95,7 @@ Now, let’s break down this analogy further:
 
 ## **Virtual Machines (VMs) vs Docker Architecture**
 
-![Alt text](/images/1c.png)
+![Alt text](./images/1c.png)
 
 | Feature                  | Virtual Machines (VMs)                        | Docker Containers                              |
 |--------------------------|-----------------------------------------------|-----------------------------------------------|
@@ -112,7 +112,7 @@ Now, let’s break down this analogy further:
 
 ## **High-Level Workflow with Docker**
 
-![Alt text](/images/1d.png)
+![Alt text](./images/1d.png)
 
 ---
 
@@ -144,7 +144,7 @@ Now, let’s break down this analogy further:
 - **REST API:** Like the **wires**, transmitting instructions from the dashboard to the engine.  
 - **Docker Daemon:** Like the **engine**, performing tasks such as pulling images and running containers.
 
-![Alt text](/images/1e.png)
+![Alt text](./images/1e.png)
 
 This image visually represents the **Docker workflow**, illustrating how a developer builds, pushes, and deploys a Docker image across different environments.
 
